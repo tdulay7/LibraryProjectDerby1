@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserDB">
+   <children>
+      <Label layoutX="302.0" layoutY="14.0" text="User Information">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="132.0" layoutY="61.0" prefHeight="420.0" prefWidth="514.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Number" />
+          <TableColumn prefWidth="137.19998168945312" text="First Name" />
+          <TableColumn prefWidth="120.39996337890625" text="Last Name" />
+          <TableColumn minWidth="0.0" prefWidth="180.0000061035156" text="Number of Items Checked Out" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

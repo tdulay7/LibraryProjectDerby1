@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="445.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModifyItem">
+   <children>
+      <Label layoutX="35.0" layoutY="18.0" text="Complete to Add New Item" />
+      <RadioButton fx:id="Book" layoutX="38.0" layoutY="45.0" mnemonicParsing="false" text="Book">
+         <toggleGroup>
+            <ToggleGroup fx:id="SelectItem" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Media" layoutX="125.0" layoutY="45.0" mnemonicParsing="false" text="Media" toggleGroup="$SelectItem" />
+      <Label layoutX="12.0" layoutY="73.0" text="Title" />
+      <Label layoutX="12.0" layoutY="107.0" text="ISBN" />
+      <Label layoutX="12.0" layoutY="141.0" text="Author" />
+      <Label layoutX="12.0" layoutY="178.0" text="Location" />
+      <Label layoutX="12.0" layoutY="214.0" text="Quantity" />
+      <TextField fx:id="Title" layoutX="60.0" layoutY="69.0" />
+      <TextField fx:id="ISBN" layoutX="60.0" layoutY="103.0" />
+      <TextField fx:id="Author" layoutX="60.0" layoutY="137.0" />
+      <TextField fx:id="Location" layoutX="60.0" layoutY="174.0" />
+      <TextField fx:id="Quantity" layoutX="60.0" layoutY="210.0" />
+      <Label layoutX="442.0" layoutY="27.0" text="View List" />
+      <ListView fx:id="ItemList" layoutX="281.0" layoutY="63.0" prefHeight="368.0" prefWidth="400.0" />
+      <Button fx:id="AddBtn" layoutX="106.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#AddItem" text="Add" />
+      <Button fx:id="ViewList" layoutX="218.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#ViewItems" text="View List" />
+   </children>
+</AnchorPane>
